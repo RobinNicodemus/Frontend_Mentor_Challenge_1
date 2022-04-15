@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Overpass";
+  src: url("./fonts/Overpass/Overpass-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-Light-Grey: hsl(217, 12%, 63%);
+  --color-Medium-Grey: hsl(216, 12%, 54%);
+  --color-Dark-Blue: hsl(213, 19%, 18%);
+  --color-Very-Dark-Blue: hsl(216, 12%, 8%);
+  --font-Size-Body: 15px;
+  --font-Weight-Normal: 400;
+  --font-Weight-Bold: 700;
+}
+
+* {
+  font-family: "Overpass", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.compare {
+  height: 666px;
+  width: 375px;
+  background-image: url("./design/mobile-design.jpg");
+  background-repeat: no-repeat;
+}
+
+.container {
+ height: 100%;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.rating_form {
+  margin: 1.5rem;
+  display: flex;
+  flex-flow: column;
+  padding: 1.3rem;
+  gap: 1.3rem;
+  border: 1px solid red;
+}
+
+.rating_form > * {
+  display: block;
+  width: 100%;
+  border: 1px solid green;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  color: var(--color-white);
+  font-size: 24px;
+}
+
+.text {
+  color: var(--color-Light-Grey);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.stars_radio {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stars_radio li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stars_radio label {
+  color: var(--color-Light-Grey);
+}
+
+.stars_radio input {
+ display: none;
+}
+
+input[type="submit"] {
+  height: 40px;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: 20px;
+}
+
+/*Generals*/
+
+.bold {
+  font-weight: 700;
+}
